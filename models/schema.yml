@@ -1,0 +1,20 @@
+
+version: 2
+
+models:
+  - name: testview_generation
+    description: "Testing the lightdash connection"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: "Name of the entity"
+        tests:
+          - not_null  # Add any tests relevant to this column
+      - name: money
+        description: "Monetary value associated with the entity"
+        tests:
+          - not_null  # Add any tests relevant to this column
