@@ -18,3 +18,26 @@ models:
         description: "Monetary value associated with the entity"
         tests:
           - not_null  # Add any tests relevant to this column
+  - name: stg_mailchimp_list
+    description: "Mailchimp alapadatok"
+    columns:
+      - name: list_name
+        description: "A Mailchimp lista neve"
+        tests:
+          - not_null
+        meta:
+          dimension: true
+      - name: list_rating
+        description: "Lista minősége"
+        meta:
+          dimension: true
+      - name: members
+        description: "Lista tagjai"
+        meta:
+          metric: true
+          aggregation: sum
+      - name: unsubscribes
+        description: "Lista leiratkozók"
+        meta:
+          metric: true
+          aggregation: sum
