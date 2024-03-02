@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: mailchimp_list
+    database: test
+    schema: public
+    tables:
+      - name: mailchimp_list
