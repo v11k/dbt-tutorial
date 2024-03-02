@@ -28,7 +28,7 @@ models:
         meta:
           dimension: true
       - name: list_rating
-        description: "Lista minősége"
+        description: "List quality"
         meta:
           dimension: true
       - name: members
@@ -37,7 +37,7 @@ models:
           metric: true
           aggregation: sum
       - name: unsubscribes
-        description: "Lista leiratkozók"
+        description: "List unsubscribes"
         meta:
           metric: true
           aggregation: sum
