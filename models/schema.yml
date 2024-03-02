@@ -26,18 +26,22 @@ models:
         tests:
           - not_null
         meta:
-          dimension: true
+          dimension:
+            type: string
       - name: list_rating
         description: "List quality"
         meta:
           dimension: true
+            type: number
       - name: members
         description: "Lista tagjai"
         meta:
-          metric: true
-          aggregation: sum
+          metric:
+            type: number
+            aggregation: sum
       - name: unsubscribes
         description: "List unsubscribes"
         meta:
           metric: true
-          aggregation: sum
+            type: number
+            aggregation: sum
