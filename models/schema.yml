@@ -39,7 +39,7 @@ models:
             sum_of_members:
               type: sum
             average_of_members:
-              type: avg
+              type: average
       - name: unsubscribes
         meta:
          metrics:
