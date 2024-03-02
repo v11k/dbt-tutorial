@@ -34,14 +34,14 @@ models:
           dimension:
             type: number
       - name: members
-        description: "Lista tagjai"
         meta:
-          metric:
-            type: number
-            aggregation: sum
+          metrics:
+            sum_of_members:
+              type: sum
+            average_of_members:
+              type: avg
       - name: unsubscribes
-        description: "List unsubscribes"
         meta:
-          metric:
-            type: number
-            aggregation: sum
+         metrics:
+          sum_of_unsubscribes:
+            type: sum
